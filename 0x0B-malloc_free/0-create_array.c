@@ -15,13 +15,10 @@ char *create_array(unsigned int size, char c)
 
 	if (ptr == 0 || size == 0)
 	{
-		return (0);
+		return (NULL);
 	}
-	else
-	{
-		for (i = 0; i < size; i++)
-			ptr[i] = i + 1;
-	}
+	while (size--)
+		ptr[size] = c;
+
 	return (ptr);
 }
-
