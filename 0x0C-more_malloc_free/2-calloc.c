@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * *_memset - fills memory with a particular value.
- * @s: pointer to put the value
- * @x: the value
+ * *_memset - fills memory with a constant byte.
+ * @s: pointer to put the constant
+ * @x: constant
  * @n: max bytes to use
  * Return: s
 */
 
-char *_memset(char *s, int x, unsigned int n)
+char *_memset(char *s, char x, unsigned int n)
 {
 	char *ptr = s;
 
