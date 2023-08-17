@@ -10,13 +10,10 @@
 
 int main(void)
 {
-	char ch = 'a';
+	char ch;
 
-	while (ch <= 'z')
-	{
+	if (ch >= 97 && ch <= 122)
 		putchar(ch);
-		ch++;
-	}
 	putchar('\n');
 
 	return (0);
