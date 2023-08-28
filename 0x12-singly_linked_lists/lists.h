@@ -7,6 +7,24 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "lists.h"
+
+/**
+ * _strlen - returns the length of the string
+ * @s: the string to check the length
+ * Return: integer length of string
+*/
+int _strlen(char *s)
+{
+int i = 0;
+
+if (!s)
+return (0);
+while (*s++)
+i++;
+return (i);
+}
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -27,6 +45,6 @@ size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
-int _strlen(char *s)
+int _strlen(char *s);
 
 #endif
