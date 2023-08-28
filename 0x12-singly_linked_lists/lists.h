@@ -8,22 +8,6 @@
 
 
 /**
- * _strlen - returns the length of the string
- * @s: the string to check the length
- * Return: integer length of string
-*/
-int _strlen(char *s)
-{
-int i = 0;
-
-if (!s)
-return (0);
-while (*s++)
-i++;
-return (i);
-}
-
-/**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
